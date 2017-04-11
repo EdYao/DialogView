@@ -36,14 +36,19 @@
 - (void)setUpAndShow {
     [self setFrame:[UIScreen mainScreen].bounds];
     
-    [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f]];
-    
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280*kUIScale, 500)];
     [self addSubview:bgView];
     bgView.center = self.center;
     bgView.userInteractionEnabled = YES;
-    bgView.backgroundColor = [UIColor whiteColor];
+    bgView.backgroundColor = [UIColor clearColor];
     bgView.layer.cornerRadius = 13.f*kUIScale;
+    bgView.layer.masksToBounds = YES;
+    
+    //实现模糊效果
+    UIBlurEffect *blurEffrct =[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc]initWithEffect:blurEffrct];
+    visualEffectView.frame = CGRectMake(0, 0, 280*kUIScale, 500);
+    [bgView addSubview:visualEffectView];
 
     CGFloat posY = 10*kUIScale;
     
@@ -60,7 +65,7 @@
         UILabel *titleLabel = [[UILabel alloc]init];
         [titleLabel setText:_titleText];
         [titleLabel setFont:[UIFont systemFontOfSize:18]];
-        [titleLabel setTextColor:[UIColor colorWithRed:47.f/255.f green:47.f/255.f blue:47.f/255.f alpha:1]];
+        [titleLabel setTextColor:[UIColor whiteColor]];
         CGSize titleLabelSize = [titleLabel boundingRectWithSize:CGSizeMake(280*kUIScale*0.8f, 500)];
         [titleLabel setFrame:CGRectMake((bgView.frame.size.width - titleLabelSize.width)*0.5f, posY, titleLabelSize.width, titleLabelSize.height)];
         [bgView addSubview:titleLabel];
@@ -73,7 +78,7 @@
     if (_detailText) {
         UILabel *detailLabel = [[UILabel alloc]init];
         [detailLabel setText:_detailText];
-        [detailLabel setTextColor:[UIColor colorWithRed:139.f/255.f green:139.f/255.f blue:139.f/255.f alpha:1]];
+        [detailLabel setTextColor:[UIColor whiteColor]];
         detailLabel.font = [UIFont systemFontOfSize:13];
         detailLabel.textAlignment = NSTextAlignmentCenter;
         CGSize detailLabelSize = [detailLabel boundingRectWithSize:CGSizeMake(bgView.frame.size.width*0.8f, 500)];
