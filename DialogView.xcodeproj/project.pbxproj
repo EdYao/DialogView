@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5735CF651EC5846D00CA7BD9 /* CYDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5735CF621EC5846D00CA7BD9 /* CYDialogView.m */; };
+		5735CF661EC5846D00CA7BD9 /* NSString+CYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 5735CF641EC5846D00CA7BD9 /* NSString+CYExtention.m */; };
 		579779AD1E9B2E770065C19B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779AC1E9B2E770065C19B /* main.m */; };
 		579779B01E9B2E770065C19B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779AF1E9B2E770065C19B /* AppDelegate.m */; };
 		579779B31E9B2E770065C19B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779B21E9B2E770065C19B /* ViewController.m */; };
@@ -15,8 +17,6 @@
 		579779BB1E9B2E770065C19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579779B91E9B2E770065C19B /* LaunchScreen.storyboard */; };
 		579779C61E9B2E770065C19B /* DialogViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779C51E9B2E770065C19B /* DialogViewTests.m */; };
 		579779D11E9B2E770065C19B /* DialogViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779D01E9B2E770065C19B /* DialogViewUITests.m */; };
-		579779E11E9B2E880065C19B /* CYDIalogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779E01E9B2E880065C19B /* CYDIalogView.m */; };
-		579779E41E9B35F40065C19B /* NSString+CYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 579779E31E9B35F40065C19B /* NSString+CYExtention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5735CF611EC5846D00CA7BD9 /* CYDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDialogView.h; sourceTree = "<group>"; };
+		5735CF621EC5846D00CA7BD9 /* CYDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDialogView.m; sourceTree = "<group>"; };
+		5735CF631EC5846D00CA7BD9 /* NSString+CYExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CYExtention.h"; sourceTree = "<group>"; };
+		5735CF641EC5846D00CA7BD9 /* NSString+CYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYExtention.m"; sourceTree = "<group>"; };
 		579779A81E9B2E770065C19B /* DialogView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialogView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579779AC1E9B2E770065C19B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		579779AE1E9B2E770065C19B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +57,6 @@
 		579779CC1E9B2E770065C19B /* DialogViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialogViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		579779D01E9B2E770065C19B /* DialogViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewUITests.m; sourceTree = "<group>"; };
 		579779D21E9B2E770065C19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		579779DF1E9B2E880065C19B /* CYDIalogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDIalogView.h; sourceTree = "<group>"; };
-		579779E01E9B2E880065C19B /* CYDIalogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDIalogView.m; sourceTree = "<group>"; };
-		579779E21E9B35C00065C19B /* NSString+CYExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CYExtention.h"; sourceTree = "<group>"; };
-		579779E31E9B35F40065C19B /* NSString+CYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5735CF601EC5846D00CA7BD9 /* CYDialogView */ = {
+			isa = PBXGroup;
+			children = (
+				5735CF611EC5846D00CA7BD9 /* CYDialogView.h */,
+				5735CF621EC5846D00CA7BD9 /* CYDialogView.m */,
+				5735CF631EC5846D00CA7BD9 /* NSString+CYExtention.h */,
+				5735CF641EC5846D00CA7BD9 /* NSString+CYExtention.m */,
+			);
+			path = CYDialogView;
+			sourceTree = "<group>";
+		};
 		5797799F1E9B2E770065C19B = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +118,7 @@
 		579779AA1E9B2E770065C19B /* DialogView */ = {
 			isa = PBXGroup;
 			children = (
-				579779DE1E9B2E880065C19B /* UpgradeNoticeView */,
+				5735CF601EC5846D00CA7BD9 /* CYDialogView */,
 				579779AE1E9B2E770065C19B /* AppDelegate.h */,
 				579779AF1E9B2E770065C19B /* AppDelegate.m */,
 				579779B11E9B2E770065C19B /* ViewController.h */,
@@ -145,17 +156,6 @@
 				579779D21E9B2E770065C19B /* Info.plist */,
 			);
 			path = DialogViewUITests;
-			sourceTree = "<group>";
-		};
-		579779DE1E9B2E880065C19B /* UpgradeNoticeView */ = {
-			isa = PBXGroup;
-			children = (
-				579779DF1E9B2E880065C19B /* CYDIalogView.h */,
-				579779E01E9B2E880065C19B /* CYDIalogView.m */,
-				579779E21E9B35C00065C19B /* NSString+CYExtention.h */,
-				579779E31E9B35F40065C19B /* NSString+CYExtention.m */,
-			);
-			path = UpgradeNoticeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,11 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5735CF651EC5846D00CA7BD9 /* CYDialogView.m in Sources */,
 				579779B31E9B2E770065C19B /* ViewController.m in Sources */,
-				579779E11E9B2E880065C19B /* CYDIalogView.m in Sources */,
 				579779B01E9B2E770065C19B /* AppDelegate.m in Sources */,
 				579779AD1E9B2E770065C19B /* main.m in Sources */,
-				579779E41E9B35F40065C19B /* NSString+CYExtention.m in Sources */,
+				5735CF661EC5846D00CA7BD9 /* NSString+CYExtention.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

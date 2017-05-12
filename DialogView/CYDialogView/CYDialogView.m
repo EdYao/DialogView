@@ -6,7 +6,7 @@
 //  Copyright © 2017年 souduoke. All rights reserved.
 //
 
-#import "CYDIalogView.h"
+#import "CYDialogView.h"
 #import "NSString+CYExtention.h"
 
 #define kMainBoundsWidth        [UIScreen mainScreen].bounds.size.width
@@ -15,17 +15,17 @@
 #define kUIScale (kMainBoundsWidth / 375.0)
 
 
-@interface CYDIalogView()
+@interface CYDialogView()
 
 @property (strong, nonatomic) NSDictionary *dic;
 
 @end
 
-@implementation CYDIalogView
+@implementation CYDialogView
 
 
 +(void)showWithTitle:(NSString *)title headIcon:(NSString *)headIconName detail:(NSString *)detailText confirmAction:(void (^)())confirmAction {
-    CYDIalogView *view = [[CYDIalogView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    CYDialogView *view = [[CYDialogView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     view.titleText = title;
     view.headImgName = headIconName;
     view.detailText = detailText;

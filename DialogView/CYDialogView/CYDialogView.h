@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CYDIalogView : UIView
+@interface CYDialogView : UIView
 
 - (void)setUpAndShow;
 @property (copy, nonatomic) NSString *titleText;
